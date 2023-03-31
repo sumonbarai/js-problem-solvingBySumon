@@ -1,8 +1,71 @@
 // problem:01 Given an array of numbers , find the smallest number
+// ====================start===================
+// const arr = [20, 60, 80, -60, -90, 40, 12, 600, 81, 1];
+// solution-1:
+// const smallNumber = Math.min(...arr);
+// console.log(smallNumber);
+// solution-2:
+// const ascendingOrder = arr.sort((a, b) => {
+//   return a - b;
+// });
+
+// const smallestNumber = ascendingOrder.at(0);
+// console.log(smallestNumber);
+// =====================end====================
 // problem:02 Given an array of numbers , find the largest number
+// ====================start===================
+// const arr = [20, 60, 80, -60, -90, 40, 12, 600, 81, 1];
+/* // solution-1:
+const largestNumber = Math.max(...arr);
+console.log(largestNumber); */
+
+// const ascendingOrder = arr.sort((a, b) => {
+//   return a - b;
+// });
+// const largestNumber = ascendingOrder.at(-1);
+// console.log(largestNumber);
+
+// =====================end====================
+
 // problem:03 Given an array of numbers , find the sum of all number
+// ====================start===================
+// solution:
+// const arr = [1, 2, 3, 4, 5, 10];
+// const sumOfNumber = arr.reduce((total, current) => {
+//   return total + current;
+// }, 0);
+// console.log(sumOfNumber);
+// =====================end====================
 // problem:04 Given an array of Strings , create a new array with the first letter of each string
+// ====================start===================
+// const arr = ["hello", "word", "foo", "bar"];
+// -------------solution:1----------
+// let newArr = [];
+// arr.forEach((val) => {
+//   newArr.push(val.slice(0, 1));
+// });
+// console.log(newArr);
+// -------------solution:2----------
+// let newArr = [];
+// for (let i = 0; i < arr.length; i++) {
+//   newArr.push(arr[i][0]);
+// }
+// console.log(newArr);
+
+// =====================end====================
 // problem:05 Given an array of  numbers, create a new array with only even numbers
+// ====================start===================
+// const arr = [1, 2, 3, 4, 5, 6];
+// const newArr = arr.filter((num) => {
+//   if (num % 2 === 0) {
+//     return num;
+//   }
+//   return false;
+// });
+
+// console.log(newArr);
+
+// =====================end====================
 // problem:06 Given an array of Strings , find the longest string
 // problem:07 Given an array of Numbers , find the average
 // problem:08 Given an array of strings , sort them in alphabetical order
