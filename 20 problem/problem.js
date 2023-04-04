@@ -114,6 +114,15 @@ console.log(largestNumber); */
 // =====================end====================
 // problem:10 Given an array of integers , find two numbers the add up to a target value
 // ====================start===================
+// const numbers = [2, 11, 15, 7];
+// const target = 9;
+// for (let i = 0; i < numbers.length; i++) {
+//   for (let j = i + 1; j < numbers.length; j++) {
+//     if (numbers[i] + numbers[j] === target) {
+//       console.log(numbers[i], numbers[j]);
+//     }
+//   }
+// }
 
 // =====================end====================
 // problem:11 a food ordering app needs to sort the menu items by price
@@ -250,16 +259,84 @@ console.log(largestNumber); */
 // =====================end====================
 // problem:16 based on finding the two numbers that add up to a target value
 // ====================start===================
+// const purchases = [1, 2, 3, 4, 5, 1, 3, 5, 6, 7, 2, 4, 8, 9, 9];
+// let target = 10;
+// let pairs = [];
+// for (let i = 0; i < purchases.length; i++) {
+//   for (let j = i + 1; j < purchases.length; j++) {
+//     if (purchases[i] + purchases[j] === target) {
+//       pairs.push([purchases[i], purchases[j]]);
+//     }
+//   }
+// }
+// console.log(pairs);
 // =====================end====================
 // problem:17 a restaurant wants to keep track of its inventory of ingredients for various dishes . the restaurants chefs need to be able to easily update the inventory levels for each ingredient as then use them in dishes
 // ====================start===================
+// const ingredients = [
+//   { name: "dough", inventory: 10 },
+//   { name: "tomato sauce", inventory: 8 },
+//   { name: "mozzarella cheese", inventory: 6 },
+//   { name: "mushrooms", inventory: 3 },
+// ];
+
+// const updateInventory = (name, quantity) => {
+//   const ingredient = ingredients.find((item) => {
+//     return item.name === name;
+//   });
+//   if (ingredient) {
+//     if (ingredient.inventory > 0) {
+//       ingredient.inventory -= quantity;
+//     }
+//   } else {
+//     console.log(`${name} is not found`);
+//   }
+// };
+// updateInventory("dough", 2);
+// console.log(ingredients);
 // =====================end====================
 // problem:18 given an array of object representing products sort the products by price from lowest to height
 // ====================start===================
+// const products = [
+//   { name: "iphone 1", price: 1000 },
+//   { name: "iphone 2", price: 8000 },
+//   { name: "iphone 3", price: 60000 },
+//   { name: "iphone 4", price: 3000 },
+// ];
+
+// products.sort((a, b) => a.price - b.price);
+// console.log(products);
+
 // =====================end====================
 // problem:19 suppose you have an array of objects representing people and you wants to filter the array to only include people ,who are over 18 years old
 // ====================start===================
+// const peoples = [
+//   { name: "ali", age: 75 },
+//   { name: "ali khan", age: 55 },
+//   { name: "ali suni", age: 15 },
+//   { name: "ali bali", age: 10 },
+//   { name: "ali sho", age: 20 },
+// ];
+
+// const adult = peoples.filter((people) => people.age >= 18);
+// console.log(adult);
 // =====================end====================
 // problem:20 in a web application that displays a list of product with their prices in different currencies . lets say that we have an array of products ,where each product has a name and a price property USD. we want to display a list of these products with prices converted to a different currency, based on the users preferences.
 // ====================start===================
+// const products = [
+//   { name: "iphone 1", price: 1000 },
+//   { name: "iphone 2", price: 8000 },
+//   { name: "iphone 3", price: 60000 },
+//   { name: "iphone 4", price: 3000 },
+// ];
+
+// const exchangeRate = 0.009090909;
+
+// const ProductPriceByUSD = products.map((product) => {
+//   const price = (product.price * exchangeRate).toFixed(2);
+//   return { ...product, price: Number(price) };
+// });
+
+// console.log(ProductPriceByUSD);
+
 // =====================end====================
